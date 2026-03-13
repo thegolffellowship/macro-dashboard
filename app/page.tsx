@@ -223,7 +223,7 @@ export default function Dashboard() {
         </div>
       </section>
 
-      {/* 30-Day Trend Chart */}
+      {/* Trend Chart */}
       <TrendChart data={chartData} />
 
       {/* Key Macro Indicators */}

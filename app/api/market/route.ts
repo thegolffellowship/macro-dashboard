@@ -6,8 +6,12 @@ export async function GET(request: NextRequest) {
     return NextResponse.json({ error: "Missing symbol" }, { status: 400 });
   }
 
+  const VALID_RANGES = ["5d", "1mo", "3mo", "6mo", "1y", "5y"];
+  const range = request.nextUrl.searchParams.get("range") || "1mo";
+  const safeRange = VALID_RANGES.includes(range) ? range : "1mo";
+
   try {
-    const url = `https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(symbol)}?interval=1d&range=1mo`;
+    const url = `https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(symbol)}?interval=1d&range=${safeRange}`;
     const res = await fetch(url, {
       headers: {
         "User-Agent":
