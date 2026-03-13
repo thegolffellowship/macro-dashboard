@@ -30,7 +30,7 @@ export default function Header({ lastUpdated, onRefresh, loading }: HeaderProps)
             )}
           </p>
           <p className="text-xs text-slate-500 mt-0.5">
-            The Golf Fellowship LLC — Wealth Management POC
+            Built for Phillip Plant by Kerry AI
           </p>
         </div>
         <button

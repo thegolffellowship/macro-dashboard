@@ -284,7 +284,7 @@ export default function Dashboard() {
           purposes only — not investment advice.
         </p>
         <p className="text-xs text-slate-700 mt-1">
-          The Golf Fellowship LLC
+          Built for Phillip Plant by Kerry AI
         </p>
       </footer>
     </main>
