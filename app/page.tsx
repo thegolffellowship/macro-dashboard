@@ -5,7 +5,8 @@ import Header from "@/components/Header";
 import MetricCard from "@/components/MetricCard";
 import AlertBanner from "@/components/AlertBanner";
 import TrendChart from "@/components/TrendChart";
-import EconCalendar from "@/components/EconCalendar";
+import EconCalendar, { WEEKLY_EVENTS } from "@/components/EconCalendar";
+import MorningBriefing from "@/components/MorningBriefing";
 import { fetchAllMarkets } from "@/lib/fetchMarkets";
 import { fetchAllFred } from "@/lib/fetchFred";
 import { calculateAlerts } from "@/lib/alertEngine";
@@ -126,6 +127,18 @@ export default function Dashboard() {
 
       {/* Alert Signals */}
       <AlertBanner alerts={alerts} />
+
+      {/* AI Morning Briefing */}
+      <MorningBriefing
+        equities={equities}
+        rates={rates}
+        commodities={commodities}
+        fredData={fredData}
+        alerts={alerts}
+        crypto={btc}
+        econCalendar={WEEKLY_EVENTS}
+        dataReady={!loading && equities.length > 0}
+      />
 
       {/* Equity Markets */}
       <section className="mb-6">

@@ -8,7 +8,7 @@ const IMPACT_STYLES: Record<string, string> = {
   LOW: "bg-signal-green/20 text-signal-green",
 };
 
-const WEEKLY_EVENTS: EconEvent[] = [
+export const WEEKLY_EVENTS: EconEvent[] = [
   {
     date: "Monday",
     time: "10:00 AM",
