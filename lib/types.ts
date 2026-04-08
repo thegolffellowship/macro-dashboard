@@ -43,3 +43,44 @@ export interface DashboardData {
   alerts: AlertSignal[];
   lastUpdated: string;
 }
+
+// ── TGF Tracker Types ──────────────────────────────────────
+
+export interface Golfer {
+  id: string;
+  name: string;
+  venmo?: string; // Venmo username (without @)
+  chapter: "san_antonio" | "austin" | "dfw" | "houston";
+}
+
+export type PayoutCategory =
+  | "team_net"
+  | "individual_net"
+  | "individual_gross"
+  | "skins"
+  | "closest_to_pin"
+  | "hole_in_one"
+  | "other";
+
+export interface Payout {
+  golferId: string;
+  golferName: string;
+  category: PayoutCategory;
+  amount: number;
+  description?: string;
+}
+
+export interface TGFEvent {
+  id: string;
+  code: string; // e.g. "s9.4"
+  name: string; // e.g. "The Quarry"
+  date: string; // ISO date string
+  chapter: "san_antonio" | "austin" | "dfw" | "houston";
+  course: string;
+  payouts: Payout[];
+}
+
+export interface TGFData {
+  golfers: Golfer[];
+  events: TGFEvent[];
+}

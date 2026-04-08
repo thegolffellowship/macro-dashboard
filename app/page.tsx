@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState, useCallback } from "react";
+import Link from "next/link";
 import Header from "@/components/Header";
 import MetricCard from "@/components/MetricCard";
 import AlertBanner from "@/components/AlertBanner";
@@ -119,11 +120,19 @@ export default function Dashboard() {
 
   return (
     <main className="max-w-7xl mx-auto px-4 py-6">
-      <Header
-        lastUpdated={lastUpdated}
-        onRefresh={loadData}
-        loading={loading}
-      />
+      <div className="flex items-center justify-between mb-4">
+        <Header
+          lastUpdated={lastUpdated}
+          onRefresh={loadData}
+          loading={loading}
+        />
+        <Link
+          href="/tgf"
+          className="px-4 py-2 text-sm font-medium bg-navy-lighter text-slate-300 border border-navy-lighter hover:border-signal-blue hover:text-signal-blue transition-colors whitespace-nowrap"
+        >
+          TGF Tracker &rarr;
+        </Link>
+      </div>
 
       {/* Alert Signals */}
       <AlertBanner alerts={alerts} />

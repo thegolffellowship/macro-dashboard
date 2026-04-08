@@ -1,0 +1,65 @@
+{
+  "golfers": [
+    { "id": "g_ellis_gilbert", "name": "Gilbert Ellis", "chapter": "san_antonio" },
+    { "id": "g_youngs_pat", "name": "Pat Youngs", "chapter": "san_antonio" },
+    { "id": "g_young_jeff", "name": "Jeff Young", "chapter": "san_antonio" },
+    { "id": "g_campos_roland", "name": "Roland Campos", "chapter": "san_antonio" },
+    { "id": "g_rideout_jeff", "name": "Jeff Rideout", "chapter": "san_antonio" },
+    { "id": "g_wicker_fred", "name": "Fred Wicker", "chapter": "san_antonio" },
+    { "id": "g_baker_adam", "name": "Adam Baker", "chapter": "san_antonio" },
+    { "id": "g_callaway_rob", "name": "Rob Callaway", "chapter": "san_antonio" },
+    { "id": "g_decker_joe", "name": "Joe Decker", "chapter": "san_antonio" },
+    { "id": "g_bastin_jordan", "name": "Jordan Bastin", "chapter": "san_antonio" },
+    { "id": "g_taft_eric", "name": "Eric Taft", "chapter": "san_antonio" },
+    { "id": "g_hunt_steven", "name": "Steven Hunt", "chapter": "san_antonio" },
+    { "id": "g_greenwell_jeff", "name": "Jeff Greenwell", "chapter": "san_antonio" },
+    { "id": "g_thompson_brian", "name": "Brian Thompson", "chapter": "san_antonio" }
+  ],
+  "events": [
+    {
+      "id": "evt_s9_4_quarry",
+      "code": "s9.4",
+      "name": "The Quarry",
+      "date": "2026-04-07",
+      "chapter": "san_antonio",
+      "course": "The Quarry Golf Club",
+      "payouts": [
+        { "golferId": "g_ellis_gilbert", "golferName": "Gilbert Ellis", "category": "other", "amount": 84.00, "description": "TGF MVP" },
+        { "golferId": "g_ellis_gilbert", "golferName": "Gilbert Ellis", "category": "individual_net", "amount": 65.25, "description": "Individual Net" },
+        { "golferId": "g_ellis_gilbert", "golferName": "Gilbert Ellis", "category": "other", "amount": 58.00, "description": "s9.4 MVP Net" },
+        { "golferId": "g_ellis_gilbert", "golferName": "Gilbert Ellis", "category": "individual_gross", "amount": 21.00, "description": "Individual Gross" },
+
+        { "golferId": "g_youngs_pat", "golferName": "Pat Youngs", "category": "skins", "amount": 37.80, "description": "Skins Gross" },
+        { "golferId": "g_youngs_pat", "golferName": "Pat Youngs", "category": "closest_to_pin", "amount": 31.00, "description": "Closest to Pin #16" },
+        { "golferId": "g_youngs_pat", "golferName": "Pat Youngs", "category": "individual_net", "amount": 26.10, "description": "Individual Net" },
+        { "golferId": "g_youngs_pat", "golferName": "Pat Youngs", "category": "individual_gross", "amount": 21.00, "description": "Individual Gross" },
+        { "golferId": "g_youngs_pat", "golferName": "Pat Youngs", "category": "team_net", "amount": 19.50, "description": "Team Net" },
+
+        { "golferId": "g_young_jeff", "golferName": "Jeff Young", "category": "skins", "amount": 56.70, "description": "Skins Gross" },
+        { "golferId": "g_young_jeff", "golferName": "Jeff Young", "category": "closest_to_pin", "amount": 31.00, "description": "Closest to Pin #12" },
+        { "golferId": "g_young_jeff", "golferName": "Jeff Young", "category": "team_net", "amount": 19.50, "description": "Team Net" },
+
+        { "golferId": "g_campos_roland", "golferName": "Roland Campos", "category": "individual_net", "amount": 65.25, "description": "Individual Net" },
+        { "golferId": "g_campos_roland", "golferName": "Roland Campos", "category": "individual_gross", "amount": 21.00, "description": "Individual Gross" },
+        { "golferId": "g_campos_roland", "golferName": "Roland Campos", "category": "team_net", "amount": 19.50, "description": "Team Net" },
+
+        { "golferId": "g_rideout_jeff", "golferName": "Jeff Rideout", "category": "skins", "amount": 47.25, "description": "Skins Gross" },
+        { "golferId": "g_rideout_jeff", "golferName": "Jeff Rideout", "category": "individual_gross", "amount": 21.00, "description": "Individual Gross" },
+
+        { "golferId": "g_wicker_fred", "golferName": "Fred Wicker", "category": "skins", "amount": 47.25, "description": "Skins Gross" },
+
+        { "golferId": "g_baker_adam", "golferName": "Adam Baker", "category": "individual_net", "amount": 39.15, "description": "Individual Net" },
+
+        { "golferId": "g_callaway_rob", "golferName": "Rob Callaway", "category": "individual_net", "amount": 39.15, "description": "Individual Net" },
+
+        { "golferId": "g_decker_joe", "golferName": "Joe Decker", "category": "individual_net", "amount": 26.10, "description": "Individual Net" },
+
+        { "golferId": "g_bastin_jordan", "golferName": "Jordan Bastin", "category": "team_net", "amount": 19.50, "description": "Team Net" },
+        { "golferId": "g_taft_eric", "golferName": "Eric Taft", "category": "team_net", "amount": 19.50, "description": "Team Net" },
+        { "golferId": "g_hunt_steven", "golferName": "Steven Hunt", "category": "team_net", "amount": 19.50, "description": "Team Net" },
+        { "golferId": "g_greenwell_jeff", "golferName": "Jeff Greenwell", "category": "team_net", "amount": 19.50, "description": "Team Net" },
+        { "golferId": "g_thompson_brian", "golferName": "Brian Thompson", "category": "team_net", "amount": 19.50, "description": "Team Net" }
+      ]
+    }
+  ]
+}
